@@ -44,7 +44,7 @@ export function Header() {
       <span className="flex justify-self-start pl-6">
         {/* 这里保留了 gap-6，确保 Logo 和文字有足够的间距 */}
         <Link to="/" className="flex gap-6 items-center">
-          <div className="h-10 w-10 bg-cover" title="logo" style={{ backgroundImage: "url(/icon.svg)" }} />
+          <div className="h-10 w-10 bg-cover" title="logo" style={{ backgroundImage: "url(/icon.png)" }} />
           <span className="text-2xl font-brand font-bold flex items-center gap-1">
             <span className="color-primary-6">YF</span>
             <span>新闻热榜</span>
