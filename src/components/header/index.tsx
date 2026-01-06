@@ -32,7 +32,6 @@ function Refresh() {
     <button
       type="button"
       title="Refresh"
-      // 保持之前的修改：刷新按钮大一点 (text-3xl)
       className={$("i-ph:arrow-counter-clockwise-duotone btn text-3xl", isFetching && "animate-spin i-ph:circle-dashed-duotone")}
       onClick={refreshAll}
     />
@@ -43,13 +42,12 @@ export function Header() {
   return (
     <>
       <span className="flex justify-self-start pl-6">
-        {/* 👇 修改点1：间距加大到 gap-8，防止文字挡住大图 */}
-        <Link to="/" className="flex gap-8 items-center">
+        {/* 👇 修改点1：间距拉大到 gap-12，确保不挡文字 */}
+        <Link to="/" className="flex gap-12 items-center">
           
-          {/* 👇 修改点2：图片放大到 h-20 w-20 (80px)，加了圆角和居中 */}
-          {/* 注意：这里已经帮你改成了 icon.png */}
+          {/* 👇 修改点2：终极放大！h-32 w-32 (128像素) */}
           <div 
-            className="h-20 w-20 bg-cover bg-center rounded-md" 
+            className="h-32 w-32 bg-cover bg-center rounded-md" 
             title="logo" 
             style={{ backgroundImage: "url(/icon.png)" }} 
           />
